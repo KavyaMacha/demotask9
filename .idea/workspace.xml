@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c28ca64-5fbe-496c-8089-fe32c2d6a0f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/demotask9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demotask9.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task09/app/lambdas/api_handler/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/task09/app/lambdas/api_handler/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/app/lambdas/api_handler/lambda_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/task09/app/lambdas/api_handler/lambda_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/app/lambdas/api_handler/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/task09/app/lambdas/api_handler/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/app/lambdas/layers/open_meteo_layer/lambda_layer_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/app/lambdas/layers/open_meteo_layer/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/app/lambdas/layers/open_meteo_layer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/lambda_layer/layer.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/lambda_layer/nodejs/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/lambda_layer/nodejs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task09/open_meteo_layer_layer.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
