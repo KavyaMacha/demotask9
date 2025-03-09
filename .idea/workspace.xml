@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c28ca64-5fbe-496c-8089-fe32c2d6a0f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/task09/app/lambdas/api_handler/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/task09/app/lambdas/api_handler/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="6c28ca64-5fbe-496c-8089-fe32c2d6a0f1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
