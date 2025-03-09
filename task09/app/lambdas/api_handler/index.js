@@ -1,23 +1,34 @@
-const axios = require('axios');
+const AWS = require('aws-sdk');
+const weatherSDK = require('/opt/weather-sdk'); // Import from Lambda Layer
 
 exports.handler = async (event) => {
-    if (event?.path !== "/weather" || event?.httpMethod !== "GET") {
-        return {
-            statusCode: 400,
-            body: JSON.stringify({ error: "Bad Request" }),
-        };
-    }
+    const path = event.rawPath; // Get request path
+    const method = event.requestContext.http.method; // Get HTTP method
 
-    try {
-        const response = await axios.get('https://api.open-meteo.com/v1/forecast?latitude=35.6895&longitude=139.6917&current_weather=true');
+    if (path === "/weather" && method === "GET") {
+        // Fetch weather data using the SDK
+        const weatherData = await weatherSDK.getWeather(); // Assuming SDK has `getWeather` function
+
         return {
             statusCode: 200,
-            body: JSON.stringify(response.data),
+            body: JSON.stringify(weatherData),
+            headers: {
+                "content-type": "application/json"
+            },
+            isBase64Encoded: false
         };
-    } catch (error) {
+    } else {
+        // Return a 400 response for unsupported paths
         return {
-            statusCode: 500,
-            body: JSON.stringify({ error: "Failed to fetch weather data" }),
+            statusCode: 400,
+            body: JSON.stringify({
+                statusCode: 400,
+                message: `Bad request syntax or unsupported method. Request path: ${path}. HTTP method: ${method}`
+            }),
+            headers: {
+                "content-type": "application/json"
+            },
+            isBase64Encoded: false
         };
     }
 };

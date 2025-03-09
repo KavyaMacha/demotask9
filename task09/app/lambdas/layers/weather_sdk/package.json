@@ -1,5 +1,5 @@
 {
-  "name": "open_meteo_layer",
+  "name": "weather_sdk",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
